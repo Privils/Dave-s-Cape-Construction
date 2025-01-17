@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background: url("./components/images/header-image-1.jpg") center/cover no-repeat;
+}
+
+.header-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px 20px;
+  gap: 120px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.header-icon-divs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.FaPhone, .FaEnvelope, .FaClock {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.FaPhone {
+  transform: rotate(90deg);
+}
+
+.header-icon-divs p {
+  font-size: 1rem;
+}
+
+.header-icon-divs p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.nav-div {
+  position: relative;
+  top: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+nav div ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+nav div ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.nav div ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 3px;
+  transition: border-bottom 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.nav div ul li a:hover {
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+}
+
+.logo {
+  width: 60px;
+}
+
+/* ---------------home styles -----------------------*/
