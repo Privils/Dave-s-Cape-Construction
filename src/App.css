@@ -372,3 +372,7 @@ text-transform: capitalize;
   text-decoration: underline;
 }
 
+/* portfolio */
+.portfolio-header{
+  text-align: center;
+}
