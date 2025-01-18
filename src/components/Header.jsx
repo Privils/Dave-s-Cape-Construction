@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {FaPhone, FaClock, FaEnvelope} from 'react-icons/fa'
 import logo from './images/logo.png'
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    console.log(logo)
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
+  }, []);
+
   return (
     <>
       <header>
@@ -31,24 +44,20 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <nav className="nav">
-
-       <div className="nav-div">
-       <a href="">
-            <img src={logo} alt=""  className="logo"/>
+        <nav id="nav" className={isSticky ? "sticky" : ""}>
+      <div className={isSticky ? "nav-div sticky" : "nav-div"}>
+        <a href="/">
+          <img src={logo} alt="Logo" className="logo" />
         </a>
         <ul>
-            <li className="lists">
-                <a to="/">Home</a>
-                
-                </li>
-            <li className="lists"><a to="/">projects</a></li>
-            <li className="lists"><a to="/">about</a></li>
-            <li className="lists"><a to="/">contact</a></li>
+          <li className="lists"><a href="/">Home</a></li>
+          <li className="lists"><a href="#projects">Projects</a></li>
+          <li className="lists"><a href="#services">Services</a></li>
+          <li className="lists"><a href="#about">About</a></li>
+          <li className="lists"><a href="#contact">Contact</a></li>
         </ul>
-        
-       </div>
-        </nav>
+      </div>
+    </nav>
       </header>
     </>
   );

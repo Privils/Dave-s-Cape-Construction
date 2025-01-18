@@ -8,7 +8,7 @@ import { FaEnvelope, FaPhone, FaInstagram, FaFacebook } from 'react-icons/fa'
 const Footer = () => {
   return (
    <>
-    <section className="footer">
+    <section className="footer" id='contact'>
       <p>DM-Projects <span>the dream maker for all your home needs</span></p>
       
       <div className="footer-content">
@@ -51,6 +51,9 @@ const Footer = () => {
           </ul>
         </div>
 
+      </div>
+      <div className='copywrite'> 
+ &copy;2025 <a href="https://www.privilswebdev.co.za/">PrivilsWebDev</a>. All Rights Reserved
       </div>
     </section>
    </>

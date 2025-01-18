@@ -75,6 +75,7 @@ const Home = () => {
         </div>
       </section>
       <section className="services" id="services">
+        <h1>services</h1>
   <div className="services-grid">
     <figure>
       <img src={image} alt="Additions & Extensions" />
@@ -94,8 +95,12 @@ const Home = () => {
     </figure>
   </div>
 </section>
-<section className="testimonials">
-    <div className="testimonial-container">
+
+<section className="testimonial-main">
+<h1 className="testimonial-header">testimonials</h1> 
+<div className="testimonials">
+  
+<div className="testimonial-container">
         <p>
         "I couldn't be happier with the work DM Services and Maintenance did on our home renovation. From start to 
 finish, the team was professional, reliable, and truly listened to our vision. They transformed our outdated
@@ -107,6 +112,7 @@ needs!"
             <img src={image4} alt="" className="client-img"/> <h3>john m homeowner</h3>
         </div>
     </div>
+</div>
 </section>
     </>
   );
