@@ -4,20 +4,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  width: 100%;
-  height: 500px;
-  background: url("./components/images/header-image-1.jpg") center/cover no-repeat;
+body{
+  background-color: #f5f5f5;
 }
 
-.header-div {
+header {
   width: 100%;
+  background: url("./components/images/header-image-1.jpg") center/cover no-repeat;
+  height: 500px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Header Information Section (Top Info) */
+.header-div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 25px 20px;
+  padding: 20px 40px;
   gap: 120px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  color: #000000;
 }
 
 .header-icon-divs {
@@ -26,48 +33,88 @@ header {
   gap: 10px;
 }
 
-.FaPhone, .FaEnvelope, .FaClock {
-  font-size: 26px;
-  margin-right: 10px;
-}
-
-.FaPhone {
-  transform: rotate(90deg);
-}
-
 .header-icon-divs p {
   font-size: 1rem;
 }
 
 .header-icon-divs p span {
-  font-size: 1.2rem;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
+/* Navigation Styles */
 #nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  position: fixed; /* Always stay at the top */
-  top: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
+  width: 100%;
   z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .nav-div {
-  position: relative;
-  top: 30px;
-  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: 100px;
+  width: 90%;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
+.logo {
+  width: 60px;
+}
+
+.checkbtn, .close {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navigation Links */
+nav div ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav div ul li {
+  font-size: 18px;
+}
+
+#nav div ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+#nav div ul li a:hover {
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+}
+
+/* Sticky Header Effect */
+.sticky {
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.checkbtn, .close{
+  display: none;
+}
 /* Sticky effect */
 .sticky {
   top: 0;
@@ -104,66 +151,57 @@ nav div ul li {
 
 .logo {
   width: 60px;
+} */
+.sun{
+  font-size: 2em;
 }
-
+.sun:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 /* ---------------home styles -----------------------*/
-.hero{
-  background: url("./components//images/hero-image.jpg") center/cover no-repeat;
+.hero {
+  background: url("./components/images/hero-image.jpg") center/cover no-repeat;
   width: 100%;
   height: 580px;
+  background-size: cover; 
+  background-position: center;
 }
-.hero-content{
-  width: 837px;
-  height: 580px;
+
+.hero-content {
   background-color: #fff;
-}
-.hero-content h1{
-  position: relative;
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-left: 12px;
-}
-.hero-content p{
-  font-size: 20px;
-  margin: 7px;
-  padding: 9px;
+  width: calc(60%);
+  height: inherit;
+  padding: 18px 20px;
   line-height: 30px;
+  word-spacing: 2.5px;
+}
+.hero-content h1, .about h1 {
+text-align: center;
+font-size: 2.4em;
+padding: 15px 0px;
+text-transform: capitalize;
+}
+
+.hero-content p {
+ width: 100%;
 }
 /* about us */
-.about{
-  position: relative;
-  width: 100%;
-top: 0;
+.about {
+padding: 16px 30px;
 }
-.about h1{
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: capitalize;
-  text-align: center;
-  position: relative;
-  margin-top: 12vh;
-  margin-bottom: 6vh;
-}
-.about-text-container{
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-}
-.about-text-container p{
-  font-size: 20px;
-  height: auto;
-  width: 1000px;
-  text-align: center;
+.about p{
   line-height: 30px;
-  margin-bottom: 5vh;
+  word-spacing: 2.5px;
+  margin: 10px 0;
 }
+
 .about-circles{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
 }
 .circles{
 background-color: rgb(217, 217, 217);
@@ -449,4 +487,165 @@ text-transform: capitalize;
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+/* ------------------------------mobile design-------------------------------------------- */
+@media (max-width: 980px) {
+  nav div ul{
+    width: 70%;
+    gap: 10px;
+  }
+  .hero{
+    height: 900px;
+    line-height: 0px;
+  }
+}
+@media (max-width: 840px) {
+  .header-div {
+    gap: 40px;
+  }
+  
+  .header-icon-divs {
+    gap: 20px;
+  }
+  .header-icon-divs p {
+    font-size: 1rem;
+  }
+  
+  .header-icon-divs p span {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .header-div {
+    display: none;
+  }
+
+  #nav {
+    top: 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  .nav-div{
+    width: inherit;
+  top: 0;
+  border-radius: 0px;
+}
+  nav div ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  nav div ul.active {
+    transform: translateY(0);
+  }
+
+  .close {
+    display: block;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  nav div ul li a {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+  }
+
+  /* home */
+  .hero{
+    height: fit-content;
+    background: none;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p, .about p{
+    font-size: 16px;
+  }
+  .hero-content{
+    width:100%;
+    height: max-content;
+    padding: 15px 35px;
+  }
+ 
+
+
+  .about-circles{
+    flex-direction: column;
+    align-items: center;
+
+  }
+.circles{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin-top: 15px;
+}
+.testimonial-container {
+  margin: 9vh auto;
+  max-width: 400px;
+  width: 90%;  
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); 
+  position: relative; 
+}
+
+
+.testimonial-container::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  z-index: -1;
+  box-shadow: -5px -5px 10px rgba(196, 193, 193, 0.7);
+}
+}
+
+@media (max-width: 670px) {
+
+  header { 
+    height: 300px;
+  }
+  
+.circles{
+width: 270px;
+height: 270px;
+border-radius: 50%;
+margin-top: 15px;
+}
+.client{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 }

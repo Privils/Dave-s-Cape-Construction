@@ -53,8 +53,9 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="about" id="about">
-        <h1>about us</h1>
+
+       <section className="about" id="about">
+        <h1 className="about-us">about us</h1>
         <div
           className="about-text-container"
           data-aos="fade-up"
@@ -102,7 +103,10 @@ const Home = () => {
             data-aos-duration="1000"
           ></div>
         </div>
-      </section>
+      </section> 
+
+
+
       <section className="services" id="services">
         <h1>services</h1>
         <div className="services-grid">
