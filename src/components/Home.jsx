@@ -1,15 +1,29 @@
-import React from "react";
-import image from './images/12-Roofing-Services-Offered-throughout.jpg'
-import image1 from './images/Feature-House-renovation-checklist.jpg'
-import image2 from './images/Maintenance.jpeg'
-import image3 from './images/images (1).jpeg'
-import image4 from './images/images.jpeg'
+import React, { useEffect } from "react";
+import image from "./images/12-Roofing-Services-Offered-throughout.jpg";
+import image1 from "./images/Feature-House-renovation-checklist.jpg";
+import image2 from "./images/Maintenance.jpeg";
+import image3 from "./images/images (1).jpeg";
+import image4 from "./images/images.jpeg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      offest: 120,
+      once: false,
+    });
+  }, []);
   return (
     <>
       <section className="hero">
-        <div className="hero-content">
+        <div
+          className="hero-content"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+        >
           <h1>Buidling Dreams, One brick at a time</h1>
           <p>
             At DM Services and Maintenance, we specialize in turning your vision
@@ -41,7 +55,12 @@ const Home = () => {
       </section>
       <section className="about" id="about">
         <h1>about us</h1>
-        <div className="about-text-container">
+        <div
+          className="about-text-container"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
           <p>
             At DM Services and Maintenance, we are a passionate and driven team
             dedicated to bringing your vision for your home or business to life.
@@ -70,50 +89,87 @@ const Home = () => {
           </p>
         </div>
         <div className="about-circles">
-            <div className="circles"></div>
-            <div className="circles"></div>
+          <div
+            className="circles"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="800"
+          ></div>
+          <div
+            className="circles"
+            data-aos="fade-up"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+          ></div>
         </div>
       </section>
       <section className="services" id="services">
         <h1>services</h1>
-  <div className="services-grid">
-    <figure>
-      <img src={image} alt="Additions & Extensions" />
-      <figcaption>Additions & Extensions</figcaption>
-    </figure>
-    <figure>
-      <img src={image1} alt="Property Maintenance" />
-      <figcaption>Property Maintenance</figcaption>
-    </figure>
-    <figure>
-      <img src={image2} alt="Roofing Services" />
-      <figcaption>Roofing Services</figcaption>
-    </figure>
-    <figure>
-      <img src={image3} alt="Renovations & Remodeling" />
-      <figcaption>Renovations & Remodeling</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section className="testimonial-main">
-<h1 className="testimonial-header">testimonials</h1> 
-<div className="testimonials">
-  
-<div className="testimonial-container">
-        <p>
-        "I couldn't be happier with the work DM Services and Maintenance did on our home renovation. From start to 
-finish, the team was professional, reliable, and truly listened to our vision. They transformed our outdated
- kitchen into a beautiful, modern space that we absolutely love. The attention to detail was exceptional, and they
- completed the project on time and within budget. I highly recommend them for any construction or renovation 
-needs!"
-        </p>
-        <div className="client">
-            <img src={image4} alt="" className="client-img"/> <h3>john m homeowner</h3>
+        <div className="services-grid">
+          <figure
+            data-aos="fade-down"
+            data-aos-easing="ease-in"
+            data-aos-duration="700"
+          >
+            <a href="./services/Additions">
+              <img src={image3} alt="Additions & Extensions" />
+            </a>
+            <figcaption>Additions & Extensions</figcaption>
+          </figure>
+          <figure
+            data-aos="fade-down"
+            data-aos-easing="ease-in"
+            data-aos-duration="800"
+          >
+            <a href="#">
+              <img src={image2} alt="Property Maintenance" />
+            </a>
+            <figcaption>Property Maintenance</figcaption>
+          </figure>
+          <figure
+            data-aos="fade-down"
+            data-aos-easing="ease-in"
+            data-aos-duration="900"
+          >
+            <a href="#">
+              <img src={image} alt="Roofing Services" />
+            </a>
+            <figcaption>Roofing Services</figcaption>
+          </figure>
+          <figure
+            data-aos="fade-down"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+          >
+            <a href="#">
+              <img src={image1} alt="Renovations & Remodeling" />
+            </a>
+            <figcaption>Renovations & Remodeling</figcaption>
+          </figure>
         </div>
-    </div>
-</div>
-</section>
+      </section>
+
+      <section className="testimonial-main">
+        <h1 className="testimonial-header">testimonials</h1>
+        <div className="testimonials">
+          <div className="testimonial-container"
+     >
+            <p>
+              "I couldn't be happier with the work DM Services and Maintenance
+              did on our home renovation. From start to finish, the team was
+              professional, reliable, and truly listened to our vision. They
+              transformed our outdated kitchen into a beautiful, modern space
+              that we absolutely love. The attention to detail was exceptional,
+              and they completed the project on time and within budget. I highly
+              recommend them for any construction or renovation needs!"
+            </p>
+            <div className="client">
+              <img src={image4} alt="" className="client-img" />{" "}
+              <h3>john m homeowner</h3>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

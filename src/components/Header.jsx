@@ -51,7 +51,7 @@ const Header = () => {
         </a>
         <ul>
           <li className="lists"><a href="/">Home</a></li>
-          <li className="lists"><a href="#projects">Portfolio</a></li>
+          <li className="lists"><a href="./Portfolio">Portfolio</a></li>
           <li className="lists"><a href="#services">Services</a></li>
           <li className="lists"><a href="#about">About</a></li>
           <li className="lists"><a href="#contact">Contact</a></li>
