@@ -14,6 +14,7 @@ function App() {
   <Header/>
   <Routes>
 <Route index element={<Home/>}/>
+<Route path="/Home" element={<Home/>}/>
 <Route path='/Portfolio' element={<Portfolio/>}/>
 <Route path='/services/Additions' element={<Additions/>}/>
   </Routes>
