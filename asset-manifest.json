@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/d-m-projects/static/css/main.7bb1fb04.css",
+    "main.js": "/d-m-projects/static/js/main.de27c0c0.js",
+    "static/media/logo.png": "/d-m-projects/static/media/logo.ee332ebd7665487e035d.png",
+    "static/media/hero-image.jpg": "/d-m-projects/static/media/hero-image.fae452de251586cb7a05.jpg",
+    "static/media/header-image-1.jpg": "/d-m-projects/static/media/header-image-1.c54d91afbd0ef2c477b0.jpg",
+    "static/media/entertainment6.jpg": "/d-m-projects/static/media/entertainment6.cebbdb47988aa6515160.jpg",
+    "static/media/entertainment1.jpg": "/d-m-projects/static/media/entertainment1.bb362c23dc44a98e2776.jpg",
+    "static/media/entertainment2.jpg": "/d-m-projects/static/media/entertainment2.26264df5f710928de06a.jpg",
+    "static/media/groundup.jpg": "/d-m-projects/static/media/groundup.5a6d4b311a097a680f30.jpg",
+    "static/media/entertainment4.jpg": "/d-m-projects/static/media/entertainment4.5dddc14421975f65588d.jpg",
+    "static/media/entertainment5.jpg": "/d-m-projects/static/media/entertainment5.4baaa8505b15a5859b4c.jpg",
+    "static/media/entertainment7.jpg": "/d-m-projects/static/media/entertainment7.d3b603b7f5552e6c97af.jpg",
+    "static/media/entertainment-completed.jpg": "/d-m-projects/static/media/entertainment-completed.6a4ec12122d9748f10f2.jpg",
+    "static/media/tiling_over_tiles.jpg": "/d-m-projects/static/media/tiling_over_tiles.9baff1ecf689c997f3ce.jpg",
+    "static/media/Tiled-Roof-Repairs-2.jpg": "/d-m-projects/static/media/Tiled-Roof-Repairs-2.fdd0a30058a22b4136ff.jpg",
+    "static/media/Feature-House-renovation-checklist.jpg": "/d-m-projects/static/media/Feature-House-renovation-checklist.5b046df60838c199762f.jpg",
+    "static/media/entertainment8.jpg": "/d-m-projects/static/media/entertainment8.39ddcf5d5994280b7468.jpg",
+    "static/media/Maintenance.jpeg": "/d-m-projects/static/media/Maintenance.445488e2c911425e85f9.jpeg",
+    "static/media/brickwork.jpg": "/d-m-projects/static/media/brickwork.2d5f2b1eae894c188dbd.jpg",
+    "static/media/12-Roofing-Services-Offered-throughout.jpg": "/d-m-projects/static/media/12-Roofing-Services-Offered-throughout.d123c2b855fb343000fc.jpg",
+    "index.html": "/d-m-projects/index.html",
+    "main.7bb1fb04.css.map": "/d-m-projects/static/css/main.7bb1fb04.css.map",
+    "main.de27c0c0.js.map": "/d-m-projects/static/js/main.de27c0c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bb1fb04.css",
+    "static/js/main.de27c0c0.js"
+  ]
+}
