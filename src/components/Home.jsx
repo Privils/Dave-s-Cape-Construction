@@ -89,20 +89,6 @@ const Home = () => {
             dreams.
           </p>
         </div>
-        <div className="about-circles">
-          <div
-            className="circles"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="800"
-          ></div>
-          <div
-            className="circles"
-            data-aos="fade-up"
-            data-aos-easing="ease-in"
-            data-aos-duration="1000"
-          ></div>
-        </div>
       </section> 
 
 

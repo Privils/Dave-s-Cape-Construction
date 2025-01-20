@@ -10,16 +10,21 @@ body{
 
 header {
   width: 100%;
-  background: url("./components/images/header-image-1.jpg");
+  background-image: url('./components/images/header-image-1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   position: relative;
   z-index: 10;
+  transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 1; /* Start with fully visible */
 }
 
-/* Header Information Section (Top Info) */
+header.fade {
+  opacity: 0;
+}
+
 .header-div {
   display: flex;
   justify-content: flex-end;
@@ -201,18 +206,7 @@ padding: 16px 30px;
   margin: 10px 0;
 }
 
-.about-circles{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-.circles{
-background-color: rgb(217, 217, 217);
-width: 350px;
-height: 350px;
-border-radius: 50%;
-}
+
 .services {
   width: 100%;
   padding: 50px 20px;

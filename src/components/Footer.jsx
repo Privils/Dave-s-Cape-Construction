@@ -23,10 +23,11 @@ const Footer = () => {
          data-aos-easing="ease-in"
           data-aos-duration="500">
           <h1>Contact Us</h1>
-          <p><FaEnvelope /> contact@compan.co.za</p>
-          <p><FaPhone /> +27 889 5624 527</p>
-          <p><FaInstagram /> michaels_562@twed</p>
-          <p><FaFacebook /> Michael-john@facenool</p>
+          <p><FaEnvelope /> mushuredavid@gmail.com</p>
+          <p><FaPhone /> +27 74 929 4332</p>
+          {/* <p><FaInstagram /> michaels_562@twed</p> */}
+          <p>
+          <a href="https://www.facebook.com/profile.php?id=61560452746935"><FaFacebook /> D-M-Projects</a></p>
         </div>
 
         <div className="links"  data-aos="fade-up"
