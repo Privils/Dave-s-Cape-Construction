@@ -1,9 +1,4 @@
 import React, { useEffect } from "react";
-import image from "./images/12-Roofing-Services-Offered-throughout.jpg";
-import image1 from "./images/Feature-House-renovation-checklist.jpg";
-import image2 from "./images/Maintenance.jpeg";
-import image3 from "./images/images (1).jpeg";
-import image4 from "./images/images.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -102,7 +97,7 @@ const Home = () => {
             data-aos-duration="700"
           >
             <a href="./services/Additions">
-              <img src={image3} alt="Additions & Extensions" />
+              <img src={require("./images/images (1).jpeg")} alt="Additions & Extensions" />
             </a>
             <figcaption>Additions & Extensions</figcaption>
           </figure>
@@ -112,7 +107,7 @@ const Home = () => {
             data-aos-duration="800"
           >
             <a href="#">
-              <img src={image2} alt="Property Maintenance" />
+              <img src={require("./images/Maintenance.jpeg")} alt="Property Maintenance" />
             </a>
             <figcaption>Property Maintenance</figcaption>
           </figure>
@@ -122,7 +117,7 @@ const Home = () => {
             data-aos-duration="900"
           >
             <a href="#">
-              <img src={image} alt="Roofing Services" />
+              <img src={require("./images/12-Roofing-Services-Offered-throughout.jpg")} alt="Roofing Services" />
             </a>
             <figcaption>Roofing Services</figcaption>
           </figure>
@@ -132,7 +127,7 @@ const Home = () => {
             data-aos-duration="1000"
           >
             <a href="#">
-              <img src={image1} alt="Renovations & Remodeling" />
+              <img src={require("./images/Feature-House-renovation-checklist.jpg")} alt="Renovations & Remodeling" />
             </a>
             <figcaption>Renovations & Remodeling</figcaption>
           </figure>
@@ -154,7 +149,7 @@ const Home = () => {
               recommend them for any construction or renovation needs!"
             </p>
             <div className="client">
-              <img src={image4} alt="" className="client-img" />{" "}
+              <img src={require("./images/images.jpeg")} alt="" className="client-img" />{" "}
               <h3>john m homeowner</h3>
             </div>
           </div>

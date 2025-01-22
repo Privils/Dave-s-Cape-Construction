@@ -11,7 +11,17 @@ import image5 from './images/header-image-1.jpg';
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
-  const [randomImage, setRandom] = useState("");
+
+  const images = [
+    { src: image1, alt: "construction" },
+    { src: image2, alt: "construction" },
+    { src: image3, alt: "construction" },
+    { src: image4, alt: "construction" },
+    { src: image5, alt: "construction" }
+  ];
+
+
+  const [randomImage, setRandom] = useState(images[0].src);
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
@@ -27,13 +37,6 @@ const Header = () => {
     setMenuActive((prev) => !prev);
   };
 
-  const images = [
-    { src: image1, alt: "construction" },
-    { src: image2, alt: "construction" },
-    { src: image3, alt: "construction" },
-    { src: image4, alt: "construction" },
-    { src: image5, alt: "construction" }
-  ];
 
   const getRandomImages = () => {
     const index = Math.floor(Math.random() * images.length);

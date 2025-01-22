@@ -1,24 +1,16 @@
 import React, { useState } from 'react';
-import image from '../images/portfolioImages/additons/entertainment1.jpg';
-import image1 from '../images/portfolioImages/additons/entertainment2.jpg';
-import image2 from '../images/portfolioImages/additons/entertainment4.jpg';
-import image3 from '../images/portfolioImages/additons/entertainment5.jpg';
-import image4 from '../images/portfolioImages/additons/entertainment6.jpg';
-import image5 from '../images/portfolioImages/additons/entertainment7.jpg';
-import image6 from '../images/portfolioImages/additons/entertainment8.jpg';
-import image7 from '../images/portfolioImages/additons/entertainment-completed.jpg';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const Addtions = () => {
   const images = [
-    { src: image, alt: 'process1' },
-    { src: image1, alt: 'process2' },
-    { src: image2, alt: 'process3' },
-    { src: image3, alt: 'process4' },
-    { src: image4, alt: 'process5' },
-    { src: image5, alt: 'process6' },
-    { src: image6, alt: 'process7' },
-    { src: image7, alt: 'process8', caption: 'End Product' },
+    { src: require('../images/portfolioImages/additons/entertainment1.jpg'), alt: 'process1' },
+    { src: require('../images/portfolioImages/additons/entertainment2.jpg'), alt: 'process2' },
+    { src: require('../images/portfolioImages/additons/entertainment4.jpg'), alt: 'process3' },
+    { src: require('../images/portfolioImages/additons/entertainment5.jpg'), alt: 'process4' },
+    { src: require('../images/portfolioImages/additons/entertainment6.jpg'), alt: 'process5' },
+    { src: require('../images/portfolioImages/additons/entertainment7.jpg'), alt: 'process6' },
+    { src: require('../images/portfolioImages/additons/entertainment8.jpg'), alt: 'process7' },
+    { src: require('../images/portfolioImages/additons/entertainment-completed.jpg'), alt: 'process8', caption: 'End Product' },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -68,7 +60,7 @@ const Addtions = () => {
           </button>
           <img src={images[currentImageIndex].src} alt={images[currentImageIndex].alt} className="modal-image" />
           <figcaption className="modal-caption">
-            {images[currentImageIndex].caption }
+            {images[currentImageIndex].caption}
           </figcaption>
           <button className="arrow right" onClick={goRight}>
             <FaArrowRight />

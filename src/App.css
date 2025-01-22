@@ -10,7 +10,7 @@ body{
 
 header {
   width: 100%;
-  background-image: url('./components/images/header-image-1.jpg');
+  /* background-image: url('./components/images/header-image-1.jpg') ; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@ header {
   position: relative;
   z-index: 10;
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
-  opacity: 1; /* Start with fully visible */
+  opacity: 1;
 }
 
 header.fade {
@@ -85,8 +85,6 @@ header.fade {
   cursor: pointer;
   color: white;
 }
-
-/* Navigation Links */
 nav div ul {
   display: flex;
   gap: 20px;
@@ -123,7 +121,6 @@ nav div ul li {
 .checkbtn, .close{
   display: none;
 }
-/* Sticky effect */
 .sticky {
   top: 0;
   width: 100%;
