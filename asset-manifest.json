@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/d-m-projects/static/css/main.58f0c145.css",
-    "main.js": "/d-m-projects/static/js/main.c6a33795.js",
+    "main.css": "/d-m-projects/static/css/main.9ef3623d.css",
+    "main.js": "/d-m-projects/static/js/main.a264cbd1.js",
     "static/media/background2.jpg": "/d-m-projects/static/media/background2.a293da1919bcba1ee2cb.jpg",
-    "static/media/logo.png": "/d-m-projects/static/media/logo.ee332ebd7665487e035d.png",
     "static/media/hero-image.jpg": "/d-m-projects/static/media/hero-image.fae452de251586cb7a05.jpg",
     "static/media/header-image-1.jpg": "/d-m-projects/static/media/header-image-1.c54d91afbd0ef2c477b0.jpg",
     "static/media/entertainment6.jpg": "/d-m-projects/static/media/entertainment6.cebbdb47988aa6515160.jpg",
@@ -15,21 +14,27 @@
     "static/media/entertainment7.jpg": "/d-m-projects/static/media/entertainment7.d3b603b7f5552e6c97af.jpg",
     "static/media/entertainment-completed.jpg": "/d-m-projects/static/media/entertainment-completed.6a4ec12122d9748f10f2.jpg",
     "static/media/tiling_over_tiles.jpg": "/d-m-projects/static/media/tiling_over_tiles.9baff1ecf689c997f3ce.jpg",
+    "static/media/logo.jpg": "/d-m-projects/static/media/logo.a42d5610cdcc6c5e58a3.jpg",
     "static/media/Tiled-Roof-Repairs-2.jpg": "/d-m-projects/static/media/Tiled-Roof-Repairs-2.fdd0a30058a22b4136ff.jpg",
     "static/media/Feature-House-renovation-checklist.jpg": "/d-m-projects/static/media/Feature-House-renovation-checklist.5b046df60838c199762f.jpg",
     "static/media/entertainment8.jpg": "/d-m-projects/static/media/entertainment8.39ddcf5d5994280b7468.jpg",
     "static/media/background3.jpeg": "/d-m-projects/static/media/background3.4968ad0ba223d2613d06.jpeg",
+    "static/media/scheming1.jpg": "/d-m-projects/static/media/scheming1.166ec681e84262b0ee95.jpg",
     "static/media/Maintenance.jpeg": "/d-m-projects/static/media/Maintenance.445488e2c911425e85f9.jpeg",
+    "static/media/scheming2.jpg": "/d-m-projects/static/media/scheming2.be973c96a8bb21904769.jpg",
+    "static/media/scheming5.jpg": "/d-m-projects/static/media/scheming5.2fbaf65af0404515424a.jpg",
     "static/media/brickwork.jpg": "/d-m-projects/static/media/brickwork.2d5f2b1eae894c188dbd.jpg",
+    "static/media/scheming4.jpg": "/d-m-projects/static/media/scheming4.7c972cd568e9b064495c.jpg",
+    "static/media/scheming3.jpg": "/d-m-projects/static/media/scheming3.ed57119bbf5b2454faf2.jpg",
     "static/media/background4.jpg": "/d-m-projects/static/media/background4.616275942cce20eb00fa.jpg",
     "static/media/12-Roofing-Services-Offered-throughout.jpg": "/d-m-projects/static/media/12-Roofing-Services-Offered-throughout.d123c2b855fb343000fc.jpg",
     "static/media/background1.jpg": "/d-m-projects/static/media/background1.ea290c84a8f9eb7ca80e.jpg",
     "index.html": "/d-m-projects/index.html",
-    "main.58f0c145.css.map": "/d-m-projects/static/css/main.58f0c145.css.map",
-    "main.c6a33795.js.map": "/d-m-projects/static/js/main.c6a33795.js.map"
+    "main.9ef3623d.css.map": "/d-m-projects/static/css/main.9ef3623d.css.map",
+    "main.a264cbd1.js.map": "/d-m-projects/static/js/main.a264cbd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.58f0c145.css",
-    "static/js/main.c6a33795.js"
+    "static/css/main.9ef3623d.css",
+    "static/js/main.a264cbd1.js"
   ]
 }
