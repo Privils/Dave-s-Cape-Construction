@@ -13,27 +13,25 @@ const Portfolio = () => {
    >
     <figure>
       <a href="./services/Additions">
-      <img src={require('./images/12-Roofing-Services-Offered-throughout.jpg')} alt="Additions & Extensions" />
+      <img src={require('./images/images (1).jpeg')} alt="Additions & Extensions" />
       </a>
-      <figcaption>Additions & Extensions</figcaption>
+      <figcaption className='avail-img'>Additions & Extensions</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/Feature-House-renovation-checklist.jpg')} alt="Property Maintenance" />
+      <img src={require('./images/Maintenance.jpeg')} alt="Property Maintenance" />
       <figcaption>Property Maintenance</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/Maintenance.jpeg')} alt="Roofing Services" />
+      <img src={require('./images/12-Roofing-Services-Offered-throughout.jpg')} alt="Roofing Services" />
       <figcaption>Roofing Services</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/images (1).jpeg')} alt="Renovations & Remodeling" />
+      <img src={require('./images/Feature-House-renovation-checklist.jpg')} alt="Renovations & Remodeling" />
       <figcaption>Renovations & Remodeling</figcaption>
     </figure>
 
-
-
     <figure>
-      <img src={require('./images/portfolioImages/Tiled-Roof-Repairs-2.jpg')}  alt="Additions & Extensions" />
+      <img src={require('./images/portfolioImages/groundup.jpg')}  alt="Additions & Extensions" />
       <figcaption>New Home Construction</figcaption>
     </figure>
     <figure>
@@ -41,12 +39,15 @@ const Portfolio = () => {
       <figcaption>Masonry & Brickwork</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/portfolioImages/groundup.jpg')}  alt="Additions & Extensions" />
+      <img src={require('./images/portfolioImages/tiling_over_tiles.jpg')}  alt="Additions & Extensions" />
       <figcaption>Flooring & Tiling</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/portfolioImages/tiling_over_tiles.jpg')}  alt="Additions & Extensions" />
-      <figcaption> Roof, Wall & Structural Repairs</figcaption>
+<a href="./services/Roofing">
+<img src={require('./images/portfolioImages/Tiled-Roof-Repairs-2.jpg')}   alt="Additions & Extensions" />
+
+</a>
+      <figcaption className='avail-img'> Roof, Wall & Structural Repairs</figcaption>
     </figure>
   
     
