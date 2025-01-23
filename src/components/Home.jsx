@@ -116,7 +116,7 @@ const Home = () => {
             data-aos-easing="ease-in"
             data-aos-duration="900"
           >
-            <a href="#">
+            <a href="./services/Roofing">
               <img src={require("./images/12-Roofing-Services-Offered-throughout.jpg")} alt="Roofing Services" />
             </a>
             <figcaption>Roofing Services</figcaption>
