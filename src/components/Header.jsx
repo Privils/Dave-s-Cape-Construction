@@ -63,14 +63,14 @@ const Header = () => {
             <FaPhone className="FaPhone" />
             <p>
               Get in touch <br />
-              <span>+27 889 67634 782</span>
+              <span>+27 74 929 4332</span>
             </p>
           </div>
           <div className="header-icon-divs">
             <FaEnvelope className="FaEnvelope" />
             <p>
               Email us at <br />
-              <span>contact@gmail.com</span>
+              <span>mushuredavid@gmail.com</span>
             </p>
           </div>
           <div className="header-icon-divs">
