@@ -15,7 +15,10 @@ const Portfolio = () => {
       <a href="./services/Additions">
       <img src={require('./images/images (1).jpeg')} alt="Additions & Extensions" />
       </a>
-      <figcaption className='avail-img'>Additions & Extensions</figcaption>
+      <figcaption >Additions & Extensions</figcaption>
+      
+      <div className="btn-button"><button class="btn view-btn">
+          <a href="./services/Additions">view projects</a></button></div>
     </figure>
     <figure>
       <img src={require('./images/Maintenance.jpeg')} alt="Property Maintenance" />
@@ -39,15 +42,25 @@ const Portfolio = () => {
       <figcaption>Masonry & Brickwork</figcaption>
     </figure>
     <figure>
-      <img src={require('./images/portfolioImages/tiling_over_tiles.jpg')}  alt="Additions & Extensions" />
+      <a href="./services/Flooring">
+       <img src={require('./images/portfolioImages/tiling_over_tiles.jpg')}  alt="Additions & Extensions" />
+       </a>
+     
       <figcaption>Flooring & Tiling</figcaption>
+      <div className="btn-button">
+        <button className="btn view-btn">
+          <a href="./services/Flooring">view</a>
+        </button>
+      </div>
     </figure>
     <figure>
 <a href="./services/Roofing">
 <img src={require('./images/portfolioImages/Tiled-Roof-Repairs-2.jpg')}   alt="Additions & Extensions" />
 
 </a>
-      <figcaption className='avail-img'> Roof, Wall & Structural Repairs</figcaption>
+      <figcaption> Roof, Wall & Structural Repairs</figcaption>
+      <div className="btn-button"><button class="btn view-btn">
+          <a href="./services/Roofing">view projects</a></button></div>
     </figure>
   
     

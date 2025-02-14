@@ -110,6 +110,7 @@ const Home = () => {
               <img src={require("./images/Maintenance.jpeg")} alt="Property Maintenance" />
             </a>
             <figcaption>Property Maintenance</figcaption>
+           
           </figure>
           <figure
             data-aos="fade-down"
@@ -120,6 +121,7 @@ const Home = () => {
               <img src={require("./images/12-Roofing-Services-Offered-throughout.jpg")} alt="Roofing Services" />
             </a>
             <figcaption>Roofing Services</figcaption>
+           
           </figure>
           <figure
             data-aos="fade-down"
@@ -130,8 +132,13 @@ const Home = () => {
               <img src={require("./images/Feature-House-renovation-checklist.jpg")} alt="Renovations & Remodeling" />
             </a>
             <figcaption>Renovations & Remodeling</figcaption>
+           
           </figure>
         </div>
+
+        <div className="btn-button"><button class="btn">
+          <a href="./Portfolio">view all</a></button></div>
+         
       </section>
 
       <section className="testimonial-main">
@@ -150,7 +157,7 @@ const Home = () => {
             </p>
             <div className="client">
               <img src={require("./images/images.jpeg")} alt="" className="client-img" />{" "}
-              <h3>john m homeowner</h3>
+              <h3>luke michaels</h3>
             </div>
           </div>
         </div>

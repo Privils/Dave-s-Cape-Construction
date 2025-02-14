@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaClock, FaEnvelope, FaBars, FaWindowClose } from "react-icons/fa";
 import logo from "./images/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import image1 from './images/background1.jpg';
 import image2 from './images/background2.jpg';
 import image3 from './images/background3.jpeg';
@@ -55,6 +55,8 @@ const Header = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const location = useLocation()
+  
   return (
    <>
     <header style={{ backgroundImage: `url(${randomImage})` }}>

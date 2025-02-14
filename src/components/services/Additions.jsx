@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft, FaWindowClose } from 'react-icons/fa';
 
 const Addtions = () => {
   const images = [
@@ -52,9 +52,10 @@ const Addtions = () => {
       {/* Modal */}
       {isModalOpen && (
         <div className="modal">
-          <button className="close" onClick={closeModal}>
-            X
+          <button className="closebtn">
+          <FaWindowClose id="close-arrow" onClick={closeModal} />
           </button>
+        
           <button className="arrow left" onClick={goLeft}>
             <FaArrowLeft />
           </button>
