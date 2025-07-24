@@ -131,6 +131,34 @@ nav ul li a:hover{
   border: 1px solid white;
    font-size: 21px;
 }
+
+
+/*------------------mobile view----------------*/
+@media(max-width: 768px){
+  .logo-container {
+  width: 370px;
+}
+
+.logo-container h1{
+font-size: 38px;
+margin-bottom: 2vh;
+ margin-left: 8px;
+}
+.logo-container p{
+ margin-left: 8px;
+}
+.header-btn{
+  font-size: 18px;
+   padding: 10px;
+   width: 200px;
+   height: 50px;
+   margin-top: 25px;
+   margin-left: 8px;
+}
+
+}
+
+
 /* ---------------home styles -----------------------*/
 .hero {
   /* background: url("./components/images/bg.png"); */
