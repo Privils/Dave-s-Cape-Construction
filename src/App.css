@@ -160,160 +160,215 @@ margin-bottom: 2vh;
 
 
 /* ---------------home styles -----------------------*/
-.hero {
-  /* background: url("./components/images/bg.png"); */
-  width: 100%;
-  height: 580px;
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-content {
-  background-color: #fff;
-  width: calc(60%);
-  height: inherit;
-  padding: 18px 20px;
-  line-height: 30px;
-  word-spacing: 2.5px;
-}
-.hero-content h1, .about h1 {
-text-align: center;
-font-size: 2.4em;
-padding: 15px 0px;
-text-transform: capitalize;
-}
-
-.hero-content p {
- width: 100%;
-}
-/* about us */
-.about {
-padding: 16px 30px;
-}
-.about p{
-  line-height: 30px;
-  word-spacing: 2.5px;
-  margin: 10px 0;
-}
-
-
-.services {
-  width: 100%;
-  padding: 50px 20px;
-  background-color: #f5f5f5;
+.services{
+background: black;
+color: white;
+  height: 1000px;
   text-align: center;
-  margin-top: 30px;
+  padding: 15px 15px;
+  position: relative;
 }
 .services h1{
   text-transform: capitalize;
   margin: 14px;
-  font-size: 2.3em;
+  font-size: 64px;
+  color:  #D57C22;
+  text-align: initial;
+
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+.services .services-text p{
+  padding: 20px 15vw;
+  margin: 3vh 0px;
+  font-size: 1.3em;
+  color: #d6d3d3;
 }
-
-.services-grid figure {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+.service{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.services-grid figure:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+.service figure{
+  width: 290px;
+  height: 430px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 50px;
 }
-
-.services-grid img {
+.service figure img{
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+    border-radius: 50px;
+}
+figcaption{
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+.lowered{
+position: relative;
+top: 109px;
+left: 0;
+z-index: 10;
+}
+.about-text-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background: #151414;
+}
+.image-about, .about-Daves{
+  width: 40%;
+  height: 100%;
+}
+ .about-Daves{
+  width: 50%;
+  padding: 8px 20px;
+ }
+ .about-Daves h1, .prevoius-work h1, .testimonial-header{
+  font-size: 64px !important;
+  text-transform: capitalize;
+  color: #D57C22 !important;
+  margin: 4vh 2vw;
+ }
+ .prevoius-work h1,  .prevoius-work p{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+ }
+ .about-Daves p{
+  color: whitesmoke;
+ }
+.about-Daves p span{
+  color: #D57C22;
+}
+.image-about figure{
+width: 592px;
+height: 600px;
+border-radius: 20px;
+}
+.image-about figure img{
+  width: 100%;
+ height: 100%;
+ border-radius: 20px;
+}
+.prevoius-work{
+  height: 800px;
+  background: #1F1E1E;
+  padding-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.prevoius-work h1{
+  margin-top: 0px;
 }
 
-.services-grid figcaption {
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
+.prev-wrk-cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 10px;
+  gap: 10px;
 }
-.btn{
-  width: 400px;
-  margin: 5vh auto;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
-  background: #fff;
-  border: 1px solid black;
-  text-transform: capitalize;
+.prev-wrk{
+width: 564px;
+height: 517px;
+border-radius: 20px;
 }
-.btn a{
-  text-decoration: none;
-  color: inherit;
+
+.prev-wrk-1{
+width: 564px;
+height: 517px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
 }
-.btn:hover{
-  transition: .5s linear;
-  cursor: pointer;
-  background-color: #000000;
-  color: #fff;
-  font-size: 21px;
+.prev-wrk-1 figure{
+  height: 248px;
+  width: 500px;
 }
-.view-btn{
-  width: 150px;
-  margin: 2vh auto;
-  padding: 5px;
-  font-size: 17px;
-  font-weight: 500;
+.prev-wrk figure{
+height: inherit;
+}
+.prev-wrk-2{
+width: 273px;
+height: 517px;
+}
+.prev-wrk-2 figure{
+height: inherit;
+}
+.prev-wrk figure img,
+.prev-wrk-1 figure img,
+.prev-wrk-2 figure img{
+  width: 100%;
+ height: 100%;
+ border-radius: 20px;
+ object-fit: cover;
 }
 /* testimonials */
 .testimonial-main{
-  background-color: #f5f5f5;
+   background-color: #121212;
+   color: white;
 }
-.testimonials{
+.testimonials {
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  overflow-x: auto; 
+  scroll-behavior: smooth;
+   scrollbar-width: none;    
+  -ms-overflow-style: none; 
+}
+
+.testimonials::-webkit-scrollbar {
+  height: 0px;
+}
+
+.testimonials::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.testimonials::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* .testimonials{
   width: 100%;
   height: 100%;
-  background-color: #f5f5f5;
+ background-color: #121212;
   display: inline-flex;
   justify-content: space-around;
   padding: 15px;
-}
+  position: relative;
+  overflow-x: scroll;
+} */
 .testimonial-header{
   text-align: end;
   text-transform: capitalize;
   font-size: 2.3em;
   margin-right: 15px;
+  margin-top: 0;
 
 }
 .testimonial-container {
   margin: 9vh auto; 
-  background-color: rgb(217, 217, 217);
   max-width: 600px;
   width: 90%;  
   padding: 20px;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
   position: relative; 
-}
-
-
-.testimonial-container::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  z-index: -1;
-  box-shadow: -6px -6px 11px rgba(196, 193, 193, 0.7);
 }
 .testimonial-container:hover {
   transform: scale(1.05);
@@ -376,7 +431,7 @@ text-transform: capitalize;
   font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #f4b400; 
+color: #D57C22;
 }
 
 .contact p {
@@ -388,7 +443,7 @@ text-transform: capitalize;
 }
 
 .contact p svg {
-  color: #f4b400;
+  color: #D57C22;
 }
 
 .links h1,
@@ -423,13 +478,15 @@ text-transform: capitalize;
 }
 
 .footer a:hover {
-  color: #f4b400;
+ color: #D57C22;
   text-decoration: underline;
 }
 .copywrite a{
-  color: #f4b400;
+ color: #ff004f;
 }
-
+.moto span{
+color: #ff6600;
+}
 /* portfolio */
 .portfolio-header{
   text-align: center;

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
    <>
     <section className="footer" id='contact'>
-      <p>DM-Projects <span>the dream maker for all your home needs</span></p>
+      <p className='moto'>DCC-Projects <span>Building dreams, one  break at a time</span></p>
       
       <div className="footer-content">
         <div className="contact" 
@@ -47,6 +47,7 @@ const Footer = () => {
           data-aos-duration="1000">
           <h1>Our Services</h1>
           <ul>
+            <li>Quotations</li>
             <li>New Construction</li>
             <li>Renovations & Remodeling</li>
             <li>Additions & Extensions</li>
@@ -57,7 +58,6 @@ const Footer = () => {
             <li>Drywall & Painting</li>
             <li>Flooring Installation & Repairs</li>
             <li>Windows & Doors</li>
-            <li>Project Management & Consultation</li>
           </ul>
         </div>
 

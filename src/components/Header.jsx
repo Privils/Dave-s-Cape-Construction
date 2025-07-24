@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaClock, FaEnvelope, FaBars, FaWindowClose } from "react-icons/fa";
-import logo from "./images/logo.jpg";
+import logo from "./images/D.jpg";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
