@@ -230,13 +230,13 @@ z-index: 10;
   width: 50%;
   padding: 8px 20px;
  }
- .about-Daves h1, .prevoius-work h1, .testimonial-header{
+ .about-Daves h1, .prevoius-work h1, .testimonial-header, .what-is-skeeming h1{
   font-size: 64px !important;
   text-transform: capitalize;
   color: #D57C22 !important;
   margin: 4vh 2vw;
  }
- .prevoius-work h1,  .prevoius-work p{
+ .prevoius-work h1,  .prevoius-work p, .what-is-skeeming p{
   color: white;
   text-align: center;
   font-size: 18px;
@@ -244,7 +244,7 @@ z-index: 10;
  .about-Daves p{
   color: whitesmoke;
  }
-.about-Daves p span{
+.about-Daves p span, .what-is-skeeming p span{
   color: #D57C22;
 }
 .image-about figure{
@@ -390,10 +390,17 @@ height: inherit;
 .client h3{
 text-transform: capitalize;
 }
+.client figure {
+  background: red;
+  width: 130px;
+height: 110px;
+    border-radius: 50%;
+}
 .client-img{
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* footer */
@@ -488,9 +495,67 @@ color: #D57C22;
 color: #ff6600;
 }
 /* portfolio */
-.portfolio-header{
+
+.skeeming-cont{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 6vh 3vw;
+}
+.skeeming-cont figure{
+  width: 550px;
+  height: 550px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.skeeming-cont figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.skeeming-cont .what-is-skeeming{
+  width: calc(55%);
+  height: auto;
+  padding: 2%;
+}
+.what-is-skeeming p{
+  color: white;
+  text-align: justify;
+  margin: 3vh 0px;
+}
+.what-is-skeeming h1{
+   font-size: 44px !important;
+  margin: 0vh 2vw;
   text-align: center;
 }
+.what-is-skeeming h3{
+  color: #D57C22;
+  font-size: 26px;
+}
+.extension .skeeming-cont{
+  background: #3f1414;
+}
+.roofing-services .skeeming-cont{
+background: #151515;
+}
+.tiling .skeeming-cont{
+  background: #3f1414; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* addtions page */

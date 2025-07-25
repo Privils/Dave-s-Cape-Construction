@@ -159,12 +159,15 @@ const Home = () => {
     I highly recommend them for any construction or renovation needs!"
   </p>
   <div className="client">
-    <img
-      src={require("./images/images.jpeg")}
+    <figure>
+       <img
+      src={require("./images/elizeu-dias.jpg")}
       alt="Luke Michaels"
       className="client-img"
     />
-    <h3>Luke Michaels</h3>
+    </figure>
+   
+    <h3>elizeu dias</h3>
   </div>
 </div>
 <div className="testimonial-container">
@@ -175,11 +178,14 @@ const Home = () => {
     We now have a modern, functional bathroom we’re proud to show off to guests."
   </p>
   <div className="client">
-    <img
-      src={require("./images/12-Roofing-Services-Offered-throughout.jpg")}
+     <figure>
+      <img
+      src={require("./images/prince-akachi.jpg")}
       alt="Sarah Ncube"
       className="client-img"
     />
+    </figure>
+    
     <h3>Sarah Ncube</h3>
   </div>
 </div>
@@ -190,11 +196,14 @@ const Home = () => {
     We now have the extra space our family needed, and it blends seamlessly with our existing home."
   </p>
   <div className="client">
-    <img
-      src={require("./images/D.jpg")}
+     <figure>
+      <img
+      src={require("./images/charles-etoroma.jpg")}
       alt="Thabo Moyo"
       className="client-img"
     />
+    </figure>
+    
     <h3>Thabo Moyo</h3>
   </div>
 </div>
@@ -206,11 +215,14 @@ const Home = () => {
     I highly recommend them for any renovation projects."
   </p>
   <div className="client">
-    <img
-      src={require("./images/house cons.jpg")}
+     <figure>
+       <img
+      src={require("./images/johan arense.jpg")}
       alt="Maria Daniels"
       className="client-img"
     />
+    </figure>
+   
     <h3>Maria Daniels</h3>
   </div>
 </div>
@@ -221,11 +233,14 @@ const Home = () => {
     It’s reassuring to know I can count on them for any property maintenance needs."
   </p>
   <div className="client">
-    <img
-      src={require("./images/images.jpeg")}
+     <figure>
+        <img
+      src={require("./images/nomsa khumalo.jpg")}
       alt="Nomsa Khumalo"
       className="client-img"
     />
+    </figure>
+  
     <h3>Nomsa Khumalo</h3>
   </div>
 </div>
@@ -236,11 +251,14 @@ const Home = () => {
     The new look has made a huge difference for our customers and staff."
   </p>
   <div className="client">
-    <img
-      src={require("./images/background4.jpg")}
+     <figure>
+         <img
+      src={require("./images/ian-dooley.jpg")}
       alt="Jacob Smith"
       className="client-img"
     />
+    </figure>
+ 
     <h3>Jacob Smith</h3>
   </div>
 </div>
