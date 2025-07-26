@@ -1,16 +1,44 @@
-import React from "react";
-import text from "./services/Additions";
+import React, { useEffect, useState } from "react";
+import { getRandomImage } from './randomize/Skimming';
+import {  getRandomExtensionImage } from './randomize/Skimming';
+import { getRandomRoofingImage } from './randomize/Skimming';
+import { getRandomTileImage } from './randomize/Skimming'
 
 const Portfolio = () => {
+  const [image, setImage] = useState(null);
+  const [extendImage, setExtentImage] = useState(null);
+  const [roofImage, setRoofImage] = useState(null);
+    const [tilesImage, setTilesImage] = useState(null);
+ const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); 
+
+      setTimeout(() => {
+        setImage(getRandomImage());
+        setExtentImage(getRandomExtensionImage());
+        setRoofImage(getRandomRoofingImage());
+        setTilesImage(getRandomTileImage());
+        setFade(true); 
+      }, 500); 
+    }, 4000);
+
+    return () => clearInterval(interval); 
+  }, []);
   return (
     <>
       <section className="skeeming">
         <div className="skeeming-cont">
           <figure>
-            <img
-              src={require("./images/portfolioImages/roofingImages/scheming4.jpg")}
-              alt=""
+            {image &&(
+               <img
+              src={image.src}
+              alt={image.alt}
+              className={`fade-image ${fade ? 'visible' : 'hidden'}`}
             />
+            )}
+           
           </figure>
           <div className="what-is-skeeming">
             <h1>what is skimming ?</h1>
@@ -91,10 +119,14 @@ const Portfolio = () => {
 
           </div>
            <figure>
-            <img
-              src={require("./images/portfolioImages/roofingImages/scheming4.jpg")}
-              alt=""
+            {extendImage &&(
+                <img
+              src={extendImage.src}
+              alt={extendImage.alt}
+              className={`fade-image ${fade ? 'visible' : 'hidden'}`}
             />
+            )}
+          
           </figure>
         </div>
       </section>
@@ -102,10 +134,14 @@ const Portfolio = () => {
       <section className="roofing-services">
         <div className="skeeming-cont">
           <figure>
-            <img
-              src={require("./images/portfolioImages/roofingImages/scheming4.jpg")}
-              alt=""
+            {roofImage &&(
+               <img
+              src={roofImage.src}
+              alt={roofImage.alt}
+               className={`fade-image ${fade ? 'visible' : 'hidden'}`}
             />
+            )}
+           
           </figure>
           <div className="what-is-skeeming">
             <h1>roofing services</h1>
@@ -193,10 +229,14 @@ const Portfolio = () => {
        <section className="tiling">
          <div className="skeeming-cont">
          <figure>
-            <img
-              src={require("./images/portfolioImages/roofingImages/scheming4.jpg")}
-              alt=""
+          {tilesImage &&(
+             <img
+              src={tilesImage.src}
+              alt={tilesImage.alt}
+               className={`fade-image ${fade ? 'visible' : 'hidden'}`}
             />
+          )}
+           
           </figure>
           <div className="what-is-skeeming">
             <h1>tiling</h1>

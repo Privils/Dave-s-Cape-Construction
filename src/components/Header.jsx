@@ -34,10 +34,11 @@ const Header = () => {
             <img src={logo} alt="Logo" className="logo" />
           </Link>
           <h1>dave's cape <br/>construction</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ullam enim culpa tempore deserunt odit id quos aperiam velit pariatur nihil, cumque eum sint quasi labore unde eius accusamus vero.
-          Labore, molestiae quia. Assumenda minima reiciendis totam, iste a consectetur, doloremque culpa numquam eligendi velit facilis, repudiandae adipisci sapiente quo quod. Facere ea maiores omnis quisquam nisi animi expedita dolorem!
-          Illum, similique excepturi! Magni, exercitationem iusto sit maxime quibusdam dolorem quod suscipit maiores voluptatum. quisquam at a eum animi. Cumque, nobis veniam.</p>
-             <button className="header-btn">get a free qoute</button>
+          <h2>From Foundation to Finish, We Do It Right</h2>
+          <p>
+Professional. Dependable. Local.</p>
+<p>At Dave’s Cape Construction (DCC), we bring experience, precision, and passion to every project — from small repairs to large-scale renovations. Let us turn your vision into solid results.</p>
+         <button className="header-btn">get a free qoute</button>
          </div>
           {/* <FaBars className="checkbtn" onClick={toggleMenu} /> */}
           <ul className={menuActive ? "active" : ""}>

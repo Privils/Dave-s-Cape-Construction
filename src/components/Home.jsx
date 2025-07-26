@@ -55,7 +55,7 @@ const Home = () => {
           <figure className="lowered">
             <a href="#">
               <img
-                src={require("./images/Feature-House-renovation-checklist.jpg")}
+                src={require("./images/renovations.jpg")}
                 alt="Renovations & Remodeling"
               />
             </a>
@@ -137,7 +137,7 @@ const Home = () => {
           <img src={require('./images/portfolioImages/roofingImages/scheming1.jpg')} alt="" />
         </figure>
          <figure>
-          <img src={ require('./images/portfolioImages/roofingImages/WhatsApp Image 2025-03-05 at 20.59.00_5de4c5ca.jpg')} alt="" />
+          <img src={ require('./images/portfolioImages/roofingImages/roof11.jpg')} alt="" />
         </figure>
       </div>
       <div className="prev-wrk-2">

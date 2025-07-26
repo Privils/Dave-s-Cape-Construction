@@ -50,7 +50,9 @@ margin-bottom: 5vh;
  margin-left: 2vw;
 }
 .logo-container p{
- margin-left: 2vw;
+ margin: 2vh 0px;
+ font-size: 18px;
+ padding: 5px 14px;
 }
 .nav-links li {
   color: white;
@@ -506,13 +508,21 @@ color: #ff6600;
   width: 550px;
   height: 550px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px; 
+   margin: auto;
+  overflow: hidden;
 }
-.skeeming-cont figure img{
+.skeeming-cont figure img, .fade-image{
   width: 100%;
   height: 100%;
   object-fit: fill;
   border-radius: 10px;
+   transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade-image.hidden {
+  opacity: 0;
 }
 .skeeming-cont .what-is-skeeming{
   width: calc(55%);
