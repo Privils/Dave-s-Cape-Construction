@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaPhone, FaClock, FaEnvelope, FaBars, FaWindowClose } from "react-icons/fa";
 import logo from "./images/D.jpg";
 import { Link, useLocation } from "react-router-dom";
+import 'animate.css';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -29,15 +30,18 @@ const Header = () => {
    <>
     <header>
       <nav className={isSticky ? "sticky" : ""}>
-         <div className="logo-container">
+         <div className="logo-container" 
+     data-aos="fade-in"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
            <Link to="/">
             <img src={logo} alt="Logo" className="logo" />
           </Link>
-          <h1>dave's cape <br/>construction</h1>
+          <h1 className="animate__animated animate__fadeInLeft nimate__delay-2s	2s">dave's cape <br/>construction</h1>
           <h2>From Foundation to Finish, We Do It Right</h2>
-          <p>
+          <p className="animate__animated animate__fadeInRight nimate__delay-2s	2s">
 Professional. Dependable. Local.</p>
-<p>At Dave’s Cape Construction (DCC), we bring experience, precision, and passion to every project — from small repairs to large-scale renovations. Let us turn your vision into solid results.</p>
+<p className="animate__animated animate__fadeInRight">At Dave’s Cape Construction (DCC), we bring experience, precision, and passion to every project — from small repairs to large-scale renovations. Let us turn your vision into solid results.</p>
          <button className="header-btn">get a free qoute</button>
          </div>
           {/* <FaBars className="checkbtn" onClick={toggleMenu} /> */}
@@ -47,7 +51,7 @@ Professional. Dependable. Local.</p>
             {currentPath === "/" ? (
               // Show all links except "Home" when on the home page
               <>
-              <li className="dropdown">
+              <li className="dropdown animate__animated animate__fadeInTopRight nimate__delay-2s	2s">
                 <Link to="#">
                 services
                 </Link>

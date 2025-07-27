@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'hover.css/css/hover-min.css';
+
 
 const Home = () => {
   useEffect(() => {
@@ -9,10 +11,11 @@ const Home = () => {
       once: false,
     });
   }, []);
-  // change the icon , company name on top of the search
+  // , company name on top of the search
   return (
     <>
-      <section className="services" id="services">
+      <section className="services" id="services"
+     >
         <h1>services :</h1>
         <div className="services-text">
           <p>
@@ -24,8 +27,13 @@ const Home = () => {
             relationships with our clients through hard work and integrity.
           </p>
         </div>
-        <div className="service">
-          <figure>
+        <div className="service"
+       
+     >
+          <figure  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="900"
+    className="hvr-bob">
             <a href="./services/Additions">
               <img
                 src={require("./images/images (1).jpeg")}
@@ -34,7 +42,9 @@ const Home = () => {
             </a>
             <figcaption>taking of qoutations</figcaption>
           </figure>
-          <figure className="lowered">
+          <figure className="hvr-bob lowered"  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1100">
             <a href="#">
               <img
                 src={require("./images/Maintenance.jpeg")}
@@ -43,7 +53,12 @@ const Home = () => {
             </a>
             <figcaption>Property Maintenance</figcaption>
           </figure>
-          <figure>
+          <figure
+           data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1200"
+      className="hvr-bob"
+     >
             <a href="./services/Roofing">
               <img
                 src={require("./images/12-Roofing-Services-Offered-throughout.jpg")}
@@ -52,7 +67,11 @@ const Home = () => {
             </a>
             <figcaption>Roofing Services</figcaption>
           </figure>
-          <figure className="lowered">
+          <figure className="lowered hvr-bob"
+           data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1300"
+     >
             <a href="#">
               <img
                 src={require("./images/renovations.jpg")}
@@ -62,21 +81,26 @@ const Home = () => {
             <figcaption>Renovations & Remodeling</figcaption>
           </figure>
         </div>
-
-        {/* <div className="btn-button"><button class="btn">
-          <a href="./Portfolio">view all</a></button></div>
-          */}
       </section>
       <section className="about" id="about">
         <div
          className="about-text-container"
         >
-          <div className="image-about">
-            <figure>
+          <div className="image-about"
+     >
+            <figure
+             data-aos="fade-in"
+     data-aos-easing="linear"
+     data-aos-duration="950"
+     >
               <img src={require("./images/house cons.jpg")} alt="" />
             </figure>
           </div>
-          <div className="about-Daves">
+          <div className="about-Daves"
+           data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1000"
+     >
             <h1 className="about-us">about us</h1>
             <p>
               At <span>DCC Services and Maintenance</span>, we are a
@@ -128,26 +152,47 @@ const Home = () => {
 
       <div className="prev-wrk-cont">
       <div className="prev-wrk">
-        <figure>
+        <figure 
+         data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="900">
           <img src={require('./images/portfolioImages/additons/entertainment8.jpg')} alt="" />
         </figure>
       </div>
       <div className="prev-wrk-1">
-         <figure>
+         <figure 
+          data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000"
+     >
           <img src={require('./images/portfolioImages/roofingImages/scheming1.jpg')} alt="" />
         </figure>
-         <figure>
+         <figure
+          data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1100"
+     >
           <img src={ require('./images/portfolioImages/roofingImages/roof11.jpg')} alt="" />
         </figure>
       </div>
       <div className="prev-wrk-2">
-         <figure>
+         <figure
+          data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1200"
+     
+     >
           <img src={ require('./images/portfolioImages/tiles/tiles-3.jpg')} alt="" />
         </figure>
       </div>
       </div>
       </section>
-      <section className="testimonial-main">
+
+      <section className="testimonial-main"
+       data-aos="fade-in"
+     data-aos-easing="linear"
+     data-aos-duration="700"
+      >
         <h1 className="testimonial-header">testimonials</h1>
         <div className="testimonials">
          <div className="testimonial-container">
