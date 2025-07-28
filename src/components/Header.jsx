@@ -44,9 +44,9 @@ Professional. Dependable. Local.</p>
 <p className="animate__animated animate__fadeInRight">At Dave’s Cape Construction (DCC), we bring experience, precision, and passion to every project — from small repairs to large-scale renovations. Let us turn your vision into solid results.</p>
          <button className="header-btn">get a free qoute</button>
          </div>
-          {/* <FaBars className="checkbtn" onClick={toggleMenu} /> */}
+          <FaBars className="checkbtn" onClick={toggleMenu} />
           <ul className={menuActive ? "active" : ""}>
-            {/* <FaWindowClose className="close" onClick={toggleMenu} /> */}
+            <FaWindowClose className="close" onClick={toggleMenu} />
 
             {currentPath === "/" ? (
               // Show all links except "Home" when on the home page

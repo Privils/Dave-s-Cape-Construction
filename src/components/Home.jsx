@@ -11,7 +11,6 @@ const Home = () => {
       once: false,
     });
   }, []);
-  // , company name on top of the search
   return (
     <>
       <section className="services" id="services"
