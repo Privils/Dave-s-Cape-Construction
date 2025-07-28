@@ -1,59 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+QLD:wght@100..400&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: #f5f5f5;
+  overflow-x: hidden;
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
 }
-/*---------- header------------*/
+
+/*---------- Header ------------*/
 header {
   width: 100%;
   height: 100vh;
-  background: url("./components/images/MainBackground.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("./components/images/MainBackground.webp") no-repeat center center;
   background-size: cover;
 }
+
 nav {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
   padding: 20px;
 }
 
 .logo-container {
-  position: absolute; 
-  top: 0px; 
-  left: 0px; 
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 568px;
   height: 100vh;
   z-index: 10;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.750);
+  background: rgba(0, 0, 0, 0.75);
   color: rgb(241, 233, 233);
 }
-.logo{
+
+.logo {
   width: 80px;
-  height: 80px; 
+  height: 80px;
   border-radius: 50%;
   margin-bottom: 10px;
   margin-left: 12px;
 }
-.logo-container h1{
-font-size: 48px;
-text-transform: capitalize;
-margin-bottom: 5vh;
- margin-left: 2vw;
+
+.logo-container h1 {
+  font-size: 48px;
+  text-transform: capitalize;
+  margin-bottom: 5vh;
+  margin-left: 2vw;
+   font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
 }
-.logo-container p{
- margin: 2vh 0px;
- font-size: 18px;
- padding: 5px 14px;
+
+.logo-container p {
+  margin: 2vh 0;
+  font-size: 18px;
+  padding: 5px 14px;
 }
+
 .nav-links li {
   color: white;
 }
@@ -68,73 +80,82 @@ nav ul {
   padding: 8px;
   margin-right: 10px;
 }
-nav ul .header-btn{
-  margin: 0px;
+
+nav ul .header-btn {
+  margin: 0;
 }
-.header-btn{
+
+.header-btn {
   font-size: 20px;
   text-transform: capitalize;
-   padding: 4px;
-   border-radius: 8px;
-   width: 245px;
-   height: 54px;
-   background: #FF8000;
-   margin-top: 5vh;
-   margin-left: 2vw;
-   border: none;
-   color: #1e1d1d;
+  padding: 4px;
+  border-radius: 8px;
+  width: 245px;
+  height: 54px;
+  background: #FF8000;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  border: none;
+  color: #1e1d1d;
 }
-.header-btn:hover{
-  cursor: pointer;  
+
+.header-btn:hover {
+  cursor: pointer;
   border: 2px solid #222;
-   background: #ff8c00e3;
+  background: #ff8c00e3;
 }
-nav ul li{
+
+nav ul li {
   position: relative;
   list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
   font-size: 24px;
   text-decoration: none;
   color: #f1f1f1;
   text-transform: capitalize;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
   border: 1.5px solid gray;
   border-radius: 20px;
   padding: 10px 20px;
 }
-.dropdown-menu{
+
+/*---------- Dropdown Menu ------------*/
+.dropdown-menu {
   position: absolute;
   top: 100%;
   left: -10px;
   list-style: none;
   padding: 0;
-  margin: 0;
   display: none;
   margin: 10px;
   height: fit-content;
 }
-.dropdown:hover .dropdown-menu{
+
+.dropdown:hover .dropdown-menu {
   display: block;
 }
-.dropdown-menu li{
+
+.dropdown-menu li {
   margin: 10px auto;
 }
-.dropdown-menu li a{
+
+.dropdown-menu li a {
   padding: 10px 20px;
   color: white;
   white-space: nowrap;
   font-size: 18px;
 }
-.dropdown-menu li a:hover{
+
+.dropdown-menu li a:hover {
   background: #FF8000;
   border-radius: 25px;
   border: 1px solid white;
-   font-size: 21px;
+  font-size: 21px;
 }
-
-
 /*------------------mobile view----------------*/
 @media(max-width: 768px){
   .logo-container {
@@ -162,115 +183,142 @@ margin-bottom: 2vh;
 
 
 /* ---------------home styles -----------------------*/
-.services{
-background: black;
-color: white;
+.services {
+  background: black;
+  color: white;
   height: 1000px;
   text-align: center;
-  padding: 15px 15px;
+  padding: 15px;
   position: relative;
 }
-.services h1{
+
+.services h1 {
   text-transform: capitalize;
   margin: 14px;
   font-size: 64px;
-  color:  #D57C22;
+  color: #D57C22;
   text-align: initial;
-
+   font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
 }
 
-.services .services-text p{
+.services .services-text p {
   padding: 20px 15vw;
-  margin: 3vh 0px;
+  margin: 3vh 0;
   font-size: 1.3em;
   color: #d6d3d3;
 }
-.service{
+
+.service {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.service figure{
+
+.service figure {
   width: 290px;
   height: 430px;
   background-color: white;
   margin: 5px;
   border-radius: 50px;
 }
-.service figure img{
+
+.service figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-    border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
 }
-figcaption{
+
+figcaption {
   font-size: 20px;
   text-transform: capitalize;
   margin-top: 15px;
 }
-.lowered{
-position: relative;
-top: 109px;
-left: 0;
-z-index: 10;
+
+.lowered {
+  position: relative;
+  top: 109px;
+  left: 0;
+  z-index: 10;
 }
-.about-text-container{
+
+.about-text-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 20px;
   background: #151414;
 }
-.image-about, .about-Daves{
+
+.image-about,
+.about-Daves {
   width: 40%;
   height: 100%;
 }
- .about-Daves{
+
+.about-Daves {
   width: 50%;
-  padding: 8px 20px;
- }
- .about-Daves h1, .prevoius-work h1, .testimonial-header, .what-is-skeeming h1{
+  padding: 8px 1px;
+}
+
+.about-Daves h1,
+.prevoius-work h1,
+.testimonial-header,
+.what-is-skeeming h1 {
   font-size: 64px !important;
   text-transform: capitalize;
   color: #D57C22 !important;
   margin: 4vh 2vw;
- }
- .prevoius-work h1,  .prevoius-work p, .what-is-skeeming p{
+   font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+}
+
+.prevoius-work h1,
+.prevoius-work p,
+.what-is-skeeming p {
   color: white;
   text-align: center;
   font-size: 18px;
- }
- .about-Daves p{
-  color: whitesmoke;
- }
-.about-Daves p span, .what-is-skeeming p span{
-  color: #D57C22;
-}
-.image-about figure{
-width: 592px;
-height: 600px;
-border-radius: 20px;
-}
-.image-about figure img{
-  width: 100%;
- height: 100%;
- border-radius: 20px;
-}
-.prevoius-work{
-  height: 800px;
-  background: #1F1E1E;
-  padding-top: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.prevoius-work h1{
-  margin-top: 0px;
 }
 
-.prev-wrk-cont{
+.about-Daves p {
+  color: whitesmoke;
+}
+
+.about-Daves p span,
+.what-is-skeeming p span {
+  color: #D57C22;
+}
+
+.image-about figure {
+  width: 582px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.image-about figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.prevoius-work {
+  height: 800px;
+  background: #1F1E1E;
+  padding: 45px 15px 0;
+}
+
+.prevoius-work h1 {
+  margin-top: 0;
+}
+
+.prev-wrk-cont {
   width: 100%;
   height: 100%;
   display: flex;
@@ -278,42 +326,49 @@ border-radius: 20px;
   padding: 19px 10px;
   gap: 10px;
 }
-.prev-wrk{
-width: 564px;
-height: 517px;
-border-radius: 20px;
+
+.prev-wrk {
+  width: 564px;
+  height: 517px;
+  border-radius: 20px;
 }
 
-.prev-wrk-1{
-width: 564px;
-height: 517px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
+.prev-wrk-1 {
+  width: 564px;
+  height: 517px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.prev-wrk-1 figure{
+
+.prev-wrk-1 figure {
   height: 248px;
   width: 500px;
 }
-.prev-wrk figure{
-height: inherit;
+
+.prev-wrk figure {
+  height: inherit;
 }
-.prev-wrk-2{
-width: 273px;
-height: 517px;
+
+.prev-wrk-2 {
+  width: 273px;
+  height: 517px;
 }
-.prev-wrk-2 figure{
-height: inherit;
+
+.prev-wrk-2 figure {
+  height: inherit;
 }
+
 .prev-wrk figure img,
 .prev-wrk-1 figure img,
-.prev-wrk-2 figure img{
+.prev-wrk-2 figure img {
   width: 100%;
- height: 100%;
- border-radius: 20px;
- object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
 }
 /* testimonials */
 .testimonial-main{
@@ -403,6 +458,7 @@ height: 110px;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 /* footer */
@@ -519,6 +575,7 @@ color: #ff6600;
   border-radius: 10px;
    transition: opacity 0.5s ease-in-out;
   opacity: 1;
+  cursor: pointer;
 }
 
 .fade-image.hidden {

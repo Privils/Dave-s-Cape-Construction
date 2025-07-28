@@ -30,27 +30,25 @@ const Home = () => {
         <div className="service"
        
      >
-          <figure  data-aos="fade-up"
+          <figure  
+          data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="900"
     className="hvr-bob">
-            <a href="./services/Additions">
               <img
-                src={require("./images/images (1).jpeg")}
+                src={require("./images/Materials Used In Construction - List Of 72 Basic Items (1).jpg")}
                 alt="Additions & Extensions"
               />
-            </a>
             <figcaption>taking of qoutations</figcaption>
           </figure>
-          <figure className="hvr-bob lowered"  data-aos="fade-up"
+          <figure className="hvr-bob lowered"  
+          data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="1100">
-            <a href="#">
               <img
                 src={require("./images/Maintenance.jpeg")}
                 alt="Property Maintenance"
               />
-            </a>
             <figcaption>Property Maintenance</figcaption>
           </figure>
           <figure
@@ -59,12 +57,10 @@ const Home = () => {
      data-aos-duration="1200"
       className="hvr-bob"
      >
-            <a href="./services/Roofing">
               <img
                 src={require("./images/12-Roofing-Services-Offered-throughout.jpg")}
                 alt="Roofing Services"
               />
-            </a>
             <figcaption>Roofing Services</figcaption>
           </figure>
           <figure className="lowered hvr-bob"
@@ -72,12 +68,10 @@ const Home = () => {
      data-aos-easing="linear"
      data-aos-duration="1300"
      >
-            <a href="#">
               <img
                 src={require("./images/renovations.jpg")}
                 alt="Renovations & Remodeling"
               />
-            </a>
             <figcaption>Renovations & Remodeling</figcaption>
           </figure>
         </div>
