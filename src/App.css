@@ -576,22 +576,6 @@ background: #151515;
 .tiling .skeeming-cont{
   background: #3f1414; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* addtions page */
 .arrow-right{
   float: right;
@@ -1010,6 +994,35 @@ margin-top: 15px;
 .service{
   margin-bottom: 6vh;
 }
+.skeeming-cont{
+  flex-direction: column-reverse;
+  padding: 4vh 3vw;
+}
+.renovations .skeeming-cont, .extension .skeeming-cont {
+  flex-direction: column;
+}
+.skeeming-cont figure{
+  width: 100%;
+  height: 400px;
+  padding: 0px;
+}
+.skeeming-cont figure img, .fade-image{
+  width: 100%;
+  object-fit: cover;
+  transform: scale(-5px);
+}
+.skeeming-cont .what-is-skeeming{
+  width: 100%;
+  height: auto;
+}
+.what-is-skeeming p{
+  width: 100%;
+  font-size: 16px;
+}
+.what-is-skeeming h1{
+   font-size: 34px !important;
+}
+
 }
 
 @media (max-width: 620px) {
@@ -1084,6 +1097,9 @@ height: 110px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+}
+.what-is-skeeming h1{
+   font-size: 24px !important;
 }
 
 }
