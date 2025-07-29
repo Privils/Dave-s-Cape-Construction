@@ -1,6 +1,6 @@
-# D-MO Projects - Construction Company Website
+# Dave's Cape Construction - Construction Company Website
 
-Welcome to the official repository for [D-M-Projects](https://www.d-m-projects.co.za), a professional construction company based in South Africa and owned by **David Mushure**. This website serves as an online presence for the company, showcasing its services, past projects, contact information, and more.
+Welcome to the official repository for [Dave's Cape Construction](https://www.d-m-projects.co.za), a professional construction company based in South Africa and owned by **David Mushure**. This website serves as an online presence for the company, showcasing its services, past projects, contact information, and more.
 
 ---
 
