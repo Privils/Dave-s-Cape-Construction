@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import 'hover.css/css/hover-min.css';
-
+import "hover.css/css/hover-min.css";
 
 const Home = () => {
   useEffect(() => {
@@ -13,8 +12,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className="services" id="services"
-     >
+      <section className="services" id="services">
         <h1>services :</h1>
         <div className="services-text">
           <p>
@@ -26,74 +24,74 @@ const Home = () => {
             relationships with our clients through hard work and integrity.
           </p>
         </div>
-        <div className="service"
-       
-     >
-          <figure  
-          data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="900"
-    className="hvr-bob">
-              <img
-                src={require("./images/Materials Used In Construction - List Of 72 Basic Items (1).jpg")}
-                alt="Additions & Extensions"
-              />
+        <div className="service">
+          <figure
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            className="hvr-bob"
+          >
+            <img
+              src={require("./images/Materials Used In Construction - List Of 72 Basic Items (1).jpg")}
+              alt="Additions & Extensions"
+            />
             <figcaption>taking of qoutations</figcaption>
           </figure>
-          <figure className="hvr-bob lowered"  
-          data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1100">
-              <img
-                src={require("./images/Maintenance.jpeg")}
-                alt="Property Maintenance"
-              />
+          <figure
+            className="hvr-bob lowered"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1100"
+          >
+            <img
+              src={require("./images/Maintenance.jpeg")}
+              alt="Property Maintenance"
+            />
             <figcaption>Property Maintenance</figcaption>
           </figure>
           <figure
-           data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1200"
-      className="hvr-bob"
-     >
-              <img
-                src={require("./images/12-Roofing-Services-Offered-throughout.jpg")}
-                alt="Roofing Services"
-              />
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1200"
+            className="hvr-bob"
+          >
+            <img
+              src={require("./images/12-Roofing-Services-Offered-throughout.jpg")}
+              alt="Roofing Services"
+            />
             <figcaption>Roofing Services</figcaption>
           </figure>
-          <figure className="lowered hvr-bob"
-           data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1300"
-     >
-              <img
-                src={require("./images/renovations.jpg")}
-                alt="Renovations & Remodeling"
-              />
+          <figure
+            className="lowered hvr-bob"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1300"
+          >
+            <img
+              src={require("./images/renovations.jpg")}
+              alt="Renovations & Remodeling"
+            />
             <figcaption>Renovations & Remodeling</figcaption>
           </figure>
         </div>
       </section>
       <section className="about" id="about">
-        <div
-         className="about-text-container"
-        >
-          <div className="image-about"
-     >
+        <div className="about-text-container">
+          <div className="image-about">
             <figure
-             data-aos="fade-in"
-     data-aos-easing="linear"
-     data-aos-duration="950"
-     >
+              data-aos="fade-in"
+              data-aos-easing="linear"
+              data-aos-duration="950"
+            >
               <img src={require("./images/house cons.jpg")} alt="" />
             </figure>
           </div>
-          <div className="about-Daves"
-           data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1000"
-     >
+          <div
+            className="about-Daves"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <h1 className="about-us">about us</h1>
             <p>
               At <span>DCC Services and Maintenance</span>, we are a
@@ -140,168 +138,193 @@ const Home = () => {
         </div>
       </section>
       <section className="prevoius-work">
-<h1>Previous Works</h1>
-<p>Explore some of our completed projects and see how we bring quality craftsmanship and client visions to life.</p>
+        <h1>Previous Works</h1>
+        <p>
+          Explore some of our completed projects and see how we bring quality
+          craftsmanship and client visions to life.
+        </p>
 
-      <div className="prev-wrk-cont">
-      <div className="prev-wrk">
-        <figure 
-         data-aos="fade-right"
-     data-aos-easing="linear"
-     data-aos-duration="900">
-          <img src={require('./images/portfolioImages/additons/entertainment8.jpg')} alt="" />
-        </figure>
-      </div>
-      <div className="prev-wrk-1">
-         <figure 
-          data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"
-     >
-          <img src={require('./images/portfolioImages/roofingImages/scheming1.jpg')} alt="" />
-        </figure>
-         <figure
-          data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1100"
-     >
-          <img src={ require('./images/portfolioImages/roofingImages/roof11.jpg')} alt="" />
-        </figure>
-      </div>
-      <div className="prev-wrk-2">
-         <figure
-          data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1200"
-     
-     >
-          <img src={ require('./images/portfolioImages/tiles/tiles-3.jpg')} alt="" />
-        </figure>
-      </div>
-      </div>
+        <div className="prev-wrk-cont">
+          <div className="prev-wrk">
+            <figure
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="900"
+            >
+              <img
+                src={require("./images/portfolioImages/additons/entertainment8.jpg")}
+                alt=""
+              />
+            </figure>
+          </div>
+          <div className="prev-wrk-1">
+            <figure
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img
+                src={require("./images/portfolioImages/roofingImages/scheming1.jpg")}
+                alt=""
+              />
+            </figure>
+            <figure
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1100"
+            >
+              <img
+                src={require("./images/portfolioImages/roofingImages/roof11.jpg")}
+                alt=""
+              />
+            </figure>
+          </div>
+          <div className="prev-wrk-2">
+            <figure
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+            >
+              <img
+                src={require("./images/portfolioImages/tiles/tiles-3.jpg")}
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
       </section>
 
-      <section className="testimonial-main"
-       data-aos="fade-in"
-     data-aos-easing="linear"
-     data-aos-duration="700"
+      <section
+        className="testimonial-main"
+        data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-duration="700"
       >
         <h1 className="testimonial-header">testimonials</h1>
         <div className="testimonials">
-         <div className="testimonial-container">
-  <p>
-    "I couldn't be happier with the work DM Services and Maintenance did on our home renovation.
-    From start to finish, the team was professional, reliable, and truly listened to our vision.
-    They transformed our outdated kitchen into a beautiful, modern space that we absolutely love.
-    The attention to detail was exceptional, and the project was completed on time and within budget.
-    I highly recommend them for any construction or renovation needs!"
-  </p>
-  <div className="client">
-    <figure>
-       <img
-      src={require("./images/elizeu-dias.jpg")}
-      alt="Luke Michaels"
-      className="client-img"
-    />
-    </figure>
-   
-    <h3>elizeu dias</h3>
-  </div>
-</div>
-<div className="testimonial-container">
-  <p>
-    "DM Services and Maintenance exceeded our expectations with our bathroom renovation.
-    They provided excellent advice, worked efficiently, and the quality of their work is outstanding.
-    The team was friendly and respectful of our home throughout the process.
-    We now have a modern, functional bathroom we’re proud to show off to guests."
-  </p>
-  <div className="client">
-     <figure>
-      <img
-      src={require("./images/prince-akachi.jpg")}
-      alt="Sarah Ncube"
-      className="client-img"
-    />
-    </figure>
-    
-    <h3>Sarah Ncube</h3>
-  </div>
-</div>
-<div className="testimonial-container">
-  <p>
-    "From planning to execution, DM Services and Maintenance handled our home extension project with professionalism and care.
-    They were transparent about timelines and costs, and their workmanship is top-notch.
-    We now have the extra space our family needed, and it blends seamlessly with our existing home."
-  </p>
-  <div className="client">
-     <figure>
-      <img
-      src={require("./images/charles-etoroma.jpg")}
-      alt="Thabo Moyo"
-      className="client-img"
-    />
-    </figure>
-    
-    <h3>Thabo Moyo</h3>
-  </div>
-</div>
-<div className="testimonial-container">
-  <p>
-    "Working with DM Services and Maintenance was a fantastic experience.
-    They transformed our cramped kitchen into a beautiful, open space perfect for our family.
-    Their team was punctual, tidy, and communicated with us every step of the way.
-    I highly recommend them for any renovation projects."
-  </p>
-  <div className="client">
-     <figure>
-       <img
-      src={require("./images/johan arense.jpg")}
-      alt="Maria Daniels"
-      className="client-img"
-    />
-    </figure>
-   
-    <h3>Maria Daniels</h3>
-  </div>
-</div>
-<div className="testimonial-container">
-  <p>
-    "I have used DM Services and Maintenance for several maintenance jobs around my property,
-    and each time they deliver excellent work. They are reliable, affordable, and complete tasks quickly without compromising quality.
-    It’s reassuring to know I can count on them for any property maintenance needs."
-  </p>
-  <div className="client">
-     <figure>
-        <img
-      src={require("./images/nomsa khumalo.jpg")}
-      alt="Nomsa Khumalo"
-      className="client-img"
-    />
-    </figure>
-  
-    <h3>Nomsa Khumalo</h3>
-  </div>
-</div>
-<div className="testimonial-container">
-  <p>
-    "DM Services and Maintenance helped us renovate our small business premises, and we couldn’t be more pleased with the outcome.
-    They worked around our schedule to minimize disruption, kept the site clean, and delivered quality work on time.
-    The new look has made a huge difference for our customers and staff."
-  </p>
-  <div className="client">
-     <figure>
-         <img
-      src={require("./images/ian-dooley.jpg")}
-      alt="Jacob Smith"
-      className="client-img"
-    />
-    </figure>
- 
-    <h3>Jacob Smith</h3>
-  </div>
-</div>
+          <div className="testimonial-container">
+            <p>
+              "I couldn't be happier with the work DM Services and Maintenance
+              did on our home renovation. From start to finish, the team was
+              professional, reliable, and truly listened to our vision. They
+              transformed our outdated kitchen into a beautiful, modern space
+              that we absolutely love. The attention to detail was exceptional,
+              and the project was completed on time and within budget. I highly
+              recommend them for any construction or renovation needs!"
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/elizeu-dias.jpg")}
+                  alt="Luke Michaels"
+                  className="client-img"
+                />
+              </figure>
 
+              <h3>elizeu dias</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              "DM Services and Maintenance exceeded our expectations with our
+              bathroom renovation. They provided excellent advice, worked
+              efficiently, and the quality of their work is outstanding. The
+              team was friendly and respectful of our home throughout the
+              process. We now have a modern, functional bathroom we’re proud to
+              show off to guests."
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/prince-akachi.jpg")}
+                  alt="Sarah Ncube"
+                  className="client-img"
+                />
+              </figure>
 
+              <h3>Sarah Ncube</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              "From planning to execution, DM Services and Maintenance handled
+              our home extension project with professionalism and care. They
+              were transparent about timelines and costs, and their workmanship
+              is top-notch. We now have the extra space our family needed, and
+              it blends seamlessly with our existing home."
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/charles-etoroma.jpg")}
+                  alt="Thabo Moyo"
+                  className="client-img"
+                />
+              </figure>
+
+              <h3>Thabo Moyo</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              "Working with DM Services and Maintenance was a fantastic
+              experience. They transformed our cramped kitchen into a beautiful,
+              open space perfect for our family. Their team was punctual, tidy,
+              and communicated with us every step of the way. I highly recommend
+              them for any renovation projects."
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/johan arense.jpg")}
+                  alt="Maria Daniels"
+                  className="client-img"
+                />
+              </figure>
+
+              <h3>Maria Daniels</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              "I have used DM Services and Maintenance for several maintenance
+              jobs around my property, and each time they deliver excellent
+              work. They are reliable, affordable, and complete tasks quickly
+              without compromising quality. It’s reassuring to know I can count
+              on them for any property maintenance needs."
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/nomsa khumalo.jpg")}
+                  alt="Nomsa Khumalo"
+                  className="client-img"
+                />
+              </figure>
+
+              <h3>Nomsa Khumalo</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              "DM Services and Maintenance helped us renovate our small business
+              premises, and we couldn’t be more pleased with the outcome. They
+              worked around our schedule to minimize disruption, kept the site
+              clean, and delivered quality work on time. The new look has made a
+              huge difference for our customers and staff."
+            </p>
+            <div className="client">
+              <figure>
+                <img
+                  src={require("./images/ian-dooley.jpg")}
+                  alt="Jacob Smith"
+                  className="client-img"
+                />
+              </figure>
+
+              <h3>Jacob Smith</h3>
+            </div>
+          </div>
         </div>
       </section>
     </>
