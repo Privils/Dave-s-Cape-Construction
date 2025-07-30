@@ -3,12 +3,15 @@ import { getRandomImage } from "./randomize/Skimming";
 import { getRandomExtensionImage } from "./randomize/Skimming";
 import { getRandomRoofingImage } from "./randomize/Skimming";
 import { getRandomTileImage } from "./randomize/Skimming";
+import { getRandomRenovationsImage } from "./randomize/Skimming";
+import BackToTopButton from "./randomize/BackToTopButton";
 
 const Portfolio = () => {
   const [image, setImage] = useState(null);
   const [extendImage, setExtentImage] = useState(null);
   const [roofImage, setRoofImage] = useState(null);
   const [tilesImage, setTilesImage] = useState(null);
+    const [renovationImage, setRenovationImage] = useState(null);
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
@@ -20,6 +23,7 @@ const Portfolio = () => {
         setExtentImage(getRandomExtensionImage());
         setRoofImage(getRandomRoofingImage());
         setTilesImage(getRandomTileImage());
+        setRenovationImage(getRandomRenovationsImage())
         setFade(true);
       }, 500);
     }, 4000);
@@ -28,6 +32,7 @@ const Portfolio = () => {
   }, []);
   return (
     <>
+      <BackToTopButton/>
       <section className="skeeming">
         <div className="skeeming-cont">
           <figure>
@@ -230,10 +235,14 @@ const Portfolio = () => {
             </p>
           </div>
           <figure>
-            <img
-              src={require("./images/portfolioImages/roofingImages/scheming4.jpg")}
-              alt=""
+            {renovationImage &&(
+               <img
+             src={renovationImage.src}
+                alt={renovationImage.alt}
+                className={`fade-image ${fade ? "visible" : "hidden"}`}
             />
+            )}
+           
           </figure>
         </div>
       </section>

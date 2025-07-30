@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "hover.css/css/hover-min.css";
+import { FaArrowUp } from 'react-icons/fa';
+import BackToTopButton from "./randomize/BackToTopButton";
 
 const Home = () => {
   useEffect(() => {
@@ -12,6 +14,7 @@ const Home = () => {
   }, []);
   return (
     <>
+    <BackToTopButton/>
       <section className="services" id="services">
         <h1>services :</h1>
         <div className="services-text">
